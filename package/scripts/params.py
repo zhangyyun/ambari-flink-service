@@ -14,7 +14,6 @@ config = Script.get_config()
     
 # params from flink-ambari-config
 flink_install_dir = config['configurations']['flink-ambari-config']['flink_install_dir']
-flink_numcontainers = config['configurations']['flink-ambari-config']['flink_numcontainers']
 flink_numberoftaskslots= config['configurations']['flink-ambari-config']['flink_numberoftaskslots']
 flink_jobmanager_memory = config['configurations']['flink-ambari-config']['flink_jobmanager_memory']
 flink_container_memory = config['configurations']['flink-ambari-config']['flink_container_memory']

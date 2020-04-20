@@ -12,12 +12,6 @@
   </property> 
 
   <property>
-    <name>flink_numcontainers</name>
-    <value>1</value>
-    <description>Number of YARN container to allocate (=Number of Task Managers)</description>
-  </property> 
-  
-  <property>
     <name>flink_numberoftaskslots</name>
     <value>1</value>
     <description>Number of task slots in each container</description>
@@ -43,13 +37,13 @@
   
   <property>
     <name>flink_jobmanager_memory</name>
-    <value>768</value>
+    <value>1024</value>
     <description>Memory for JobManager Container [in MB]. Must be at least 768</description>
   </property> 
       
   <property>
     <name>flink_container_memory</name>
-    <value>1024</value>
+    <value>1568</value>
     <description>Memory per TaskManager Container [in MB]</description>
   </property> 
         
@@ -69,13 +63,13 @@
 
   <property>
     <name>flink_download_url</name>
-    <value>http://www.us.apache.org/dist/flink/flink-1.9.1/flink-1.9.1-bin-scala_2.11.tgz</value>
+    <value>http://121.36.6.231:8888/yum/stable/custom/flink/flink-1.10.0-bin-scala_2.11.tgz</value>
     <description>Snapshot download location. Downloaded when setup_prebuilt is true</description>
   </property>
 
   <property>
     <name>flink_hadoop_shaded_jar</name>
-    <value>https://repo.maven.apache.org/maven2/org/apache/flink/flink-shaded-hadoop-2-uber/2.6.5-7.0/flink-shaded-hadoop-2-uber-2.6.5-7.0.jar</value>
+    <value>http://121.36.6.231:8888/yum/stable/custom/flink/flink-shaded-hadoop-2-uber-2.7.3.2.5.3.0-37-9.0.jar</value>
     <description>Flink shaded hadoop jar download location. Downloaded when setup_prebuilt is true</description>
   </property>
 </configuration>
